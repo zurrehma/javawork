@@ -1,0 +1,36 @@
+package gui;
+
+import java.awt.Color;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.FlowLayout;
+
+public class missingNumberGUI {
+
+	private JFrame frame;
+
+	
+	public missingNumberGUI() {
+		initialize();
+		frame.setVisible(true);
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		int height=600;
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, height);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(0, 0, 434, height);
+		panel.setBackground(Color.YELLOW);
+		frame.getContentPane().add(panel);
+		
+	}
+}

@@ -1,0 +1,12 @@
+package class1;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		car test1=new car();
+		test1.description("truck");
+		test1.engine(200);
+	}
+
+}

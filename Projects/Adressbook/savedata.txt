@@ -1,0 +1,4 @@
+ShapeDrawing.Circle@794d01a2,87,101
+ShapeDrawing.Circle@40d12406,215,104
+ShapeDrawing.Circle@589c34da,374,93
+ShapeDrawing.Circle@3af71000,195,178

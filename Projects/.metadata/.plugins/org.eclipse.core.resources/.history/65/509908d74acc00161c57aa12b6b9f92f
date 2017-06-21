@@ -1,0 +1,100 @@
+package adressbook;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JButton;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JTextField;
+import java.awt.Font;
+import javax.swing.ImageIcon;
+
+public class test {
+
+	public JFrame frame;
+	public JTextField tfName;
+	public JTextField tlName;
+	public JTextField taD;
+
+
+	
+	public test() {
+
+
+		initialize();
+	}
+
+	
+	public void initialize() {
+		AddressBook object=new AddressBook();
+		frame = new JFrame();
+		frame.setBounds(100, 100, 700, 500);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+
+
+		JLabel lblaB = new JLabel("Address Book");
+		lblaB.setIcon(new ImageIcon("C:\\Users\\zahid\\Desktop\\images (1).jpg"));
+		lblaB.setFont(new Font("MingLiU", Font.BOLD | Font.ITALIC, 15));
+		lblaB.setBounds(253, 11, 241, 56);
+		lblaB.setForeground(Color.red);
+		frame.getContentPane().add(lblaB);
+
+		JLabel lblFN = new JLabel("First Name");
+		lblFN.setBounds(20, 110, 94, 14);
+		frame.getContentPane().add(lblFN);
+
+		tfName = new JTextField();
+		tfName.setBounds(95, 107, 119, 20);
+		frame.getContentPane().add(tfName);
+		tfName.setColumns(10);
+		//tfName.setText("hello");
+
+		JLabel lblLN = new JLabel("Last Name");
+		lblLN.setBounds(20, 135, 63, 14);
+		frame.getContentPane().add(lblLN);
+
+		tlName = new JTextField();
+		tlName.setBounds(95, 135, 119, 20);
+		frame.getContentPane().add(tlName);
+		tlName.setColumns(10);
+
+		JLabel lblad = new JLabel("Address");
+		lblad.setBounds(30, 160, 53, 26);
+		frame.getContentPane().add(lblad);
+
+		taD = new JTextField();
+		taD.setBounds(95, 163, 119, 23);
+		frame.getContentPane().add(taD);
+		taD.setColumns(10);
+
+		JButton enterButton = new JButton(" enter");
+		enterButton.setForeground(Color.RED);
+		enterButton.setBackground(Color.BLACK);
+		enterButton.setIcon(new ImageIcon(test.class.getResource("/com/sun/javafx/scene/control/skin/caspian/images/enter-icon.png")));
+		enterButton.addActionListener(new ActionListener() 
+		 {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				System.out.println(tfName.getText());
+				//System.out.println("first name is "+x);
+				
+				
+				//object.add(x,"aaa","ssss");
+				System.out.println(100);
+				object.print();
+
+			}
+		});
+
+		enterButton.setBounds(241, 221, 119, 31);
+		frame.getContentPane().add(enterButton);
+
+		
+
+	}
+}

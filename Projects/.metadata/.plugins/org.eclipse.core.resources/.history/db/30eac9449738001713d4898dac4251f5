@@ -1,0 +1,53 @@
+package bradfordMock;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class MathGUI extends JFrame implements ActionListener {
+    JTextField input1;		//declare text field
+    JTextField input2;
+    JButton btn;
+    public MathGUI() {
+	super("MathGUI");	                //call to JFrame constructor
+
+	getContentPane().setLayout(new FlowLayout());
+		
+	input1 = new JTextField(10);	//create text field
+	getContentPane().add(input1);	//add field to frame
+		
+	setSize(400,100);	            //set frame size
+	setVisible(true);	            //set frame as being visible
+	//set frame to close properly
+//	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    
+    input2 = new JTextField(10);	//create text field
+	getContentPane().add(input2);	//add field to frame
+		
+	setSize(400,100);	            //set frame size
+	setVisible(true);	            //set frame as being visible
+	//set frame to close properly
+	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	btn=new JButton("Add");
+	btn.addActionListener(new MathGUI());
+//	btn.setSize(80,20);
+	btn.setBounds(150, 30, 80, 20);
+	
+	getContentPane().add(btn);
+    }
+	
+
+    //implementation of method in ActionListener interface that
+    //handles GUI events from user.
+   
+    public void actionPerformed(ActionEvent e) {
+	//Add your event handling code here
+    	System.out.println(1);
+    }
+
+    //main method for testing that creates instance of this class
+    public static void main(String args[]) {
+	MathGUI m = new MathGUI();
+    }
+
+}

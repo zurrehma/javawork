@@ -1,0 +1,103 @@
+body{
+	
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, freesans, sans-serif;
+	
+	
+	
+}
+#topbar{
+	
+	width: 100 %;
+	height: 50px;
+	margin: 1px;
+	margin-left: 300px;
+	
+
+}
+#secondbar{
+	
+	width: 100 %;
+	height: 60px;
+	
+	background-color: #8c2104;
+}
+#thirdbar{
+	width: 100 %;
+	height: 40px;
+	
+	background-color: #771809;
+}
+#logo{
+	margin-top: 5px; 
+	float: left;
+	width: 100px;
+	margin-right: 5px;
+}
+#search{
+	margin-top: 12px;
+	margin-left: 5px;
+	max-width: 150px;
+	background-color: #A9A9A9;
+	border:none;
+	height: 20px;
+	font-weight: bold;
+}
+.bar{
+	
+	
+	border-left: 3px  #cccccc solid;
+	height: 100%;
+	float: left;
+	margin-left: 5px;
+	margin-right: 40px;
+}
+.otherthenbar{
+	
+	
+	border-left: 3px  #cccccc solid;
+	height: 100%;
+	float: left;
+	margin-left: 5px;
+	
+}
+#signin{
+	font-weight: bold;
+	position: relative;
+	top: 15px;
+	margin-left: 15px;
+	font-size: 13px;
+}
+#news{
+	font-size: 40px;
+	color: #f9fbfc;
+	
+	margin-left: 295px;
+}
+#newsbar{
+	color: white;
+	
+	position: relative;
+	top: 12px;
+	margin-left: 295px;
+	font-size: 18px;
+}
+#border{
+	border-left: 1px  #cccccc solid;
+	height: 50%;
+	float: left;
+	margin-left: 357px;
+	margin-top: -10px;
+}
+h1{
+	margin-left: 295px;
+	margin-top: -300px;
+}
+p{
+	margin-left: 295px;
+}
+#kim{
+	margin-left: 600px;
+	margin-top: 10px;
+}

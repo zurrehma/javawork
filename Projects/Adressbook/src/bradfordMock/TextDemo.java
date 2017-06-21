@@ -1,0 +1,32 @@
+package bradfordMock;
+
+public class TextDemo implements WordTool {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TextDemo obj=new TextDemo ();
+         System.out.println( obj.countLetters("zahid khan",'a'));
+         System.out.println( obj.sameLength(" khan","khan"));
+	}
+
+	@Override
+	public int countLetters(String word, char c) {
+		int count=0;
+		// TODO Auto-generated method stub
+		for(int i=0;i<word.length();i++){
+			if(word.charAt(i)==c){
+				count ++;
+			}
+			
+		}
+		return count;
+	}
+
+	@Override
+	public boolean sameLength(String x, String y) {
+		// TODO Auto-generated method stub
+		return x.length()==y.length();
+	
+	}
+
+}
